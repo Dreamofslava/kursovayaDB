@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- добавил css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="header">
+        <br><h1>Bus park</h1>
+    </div>
+
+    <div class="container">
+        <div class="search">
+            <input id="search_field" placeholder="Search by Login">
+            <button onclick="searchByLogin()">Search by Login</button>
+        </div>
+
+        <table id="usersList"></table>
+
+        <form action="#">
+            <input id="user_name" placeholder="User name">
+            <input id="user_login" placeholder="User login">
+            <input id="user_klass" placeholder="User klass">
+            <input id="user_stag" placeholder="User stag">
+            <input id="user_zp" placeholder="User zp">
+            <button onclick="createUser()">Create user</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="search">
+            <input id="search_file2" placeholder="Search by Number">
+            <button onclick="searchByNum()">Search by Number</button>
+        </div>
+
+        <table id="busList"></table>
+
+        <form action="#">
+            <input type="text" id="bus_num" placeholder="bus number">
+            <input type="text" id="bus_type" placeholder="bus type">
+            <input type="text" id="bus_mest" placeholder="bus mest">
+            <button onclick="createBus()">Create bus</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="search">
+            <input id="search_file3" placeholder="Search by Number">
+            <button onclick="searchByNumber()">Search by Number</button>
+        </div>
+
+        <table id="tripList"></table>
+
+        <form action="#">
+            <input id="trip_number" placeholder="trip number">
+            <input id="trip_starttime" placeholder="start time">
+            <input id="trip_endtime" placeholder="end time">
+            <input id="trip_interval" placeholder="interval">
+            <input id="trip_protyaj" placeholder="protyaj">
+            <button onclick="createTrip()">Create trip</button>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
